@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="#BEF0F6"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quotes"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_Author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuotes"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Author"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Author"
+                    android:layout_centerInParent="true"
+                    android:text="Author"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCopy"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/tvAuthor"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#D8E7F2"
+                    android:clickable="true"
+                    android:text="Copy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/copy"
+                    app:iconGravity="start"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/black"
+                    app:rippleColor="#EBE2E2" />
+
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/btnCopy"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#D8E7F2"
+                    android:clickable="true"
+                    android:text="Share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/share"
+                    app:iconGravity="start"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/black"
+                    app:rippleColor="#EBE2E2" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
